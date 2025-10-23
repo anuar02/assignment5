@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Docker Hub credentials (configure in Jenkins)
         DOCKER_HUB_CREDENTIALS = credentials('dockerhub-credentials')
-        DOCKER_IMAGE_NAME = 'yourusername/waste-monitor-api'
+        DOCKER_IMAGE_NAME = 'anuar-docker-hub/waste-monitor-api'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
     }
     
