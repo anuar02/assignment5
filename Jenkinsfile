@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // Docker Hub credentials (configure in Jenkins)
-        DOCKER_HUB_CREDENTIALS = credentials('dockerhub-credentials')
+        DOCKER_HUB_CREDENTIALS = credentials('anuar-docker-hub')
         DOCKER_IMAGE_NAME = 'anuar-docker-hub/waste-monitor-api'
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
     }
@@ -119,14 +119,13 @@ pipeline {
     
     post {
         always {
-            echo 'Cleaning up...'
-            sh '''
-                # Clean up Python virtual environment
-                rm -rf venv
-                
-                # Clean up dangling Docker images
-                docker image prune -f
-            '''
+            script {
+                echo 'Cleaning up...'
+                sh '''
+                    rm -rf venv || true
+                    docker image prune -f || true
+                '''
+            }
         }
         
         success {
