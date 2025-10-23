@@ -1,0 +1,50 @@
+[
+  {
+    "bin_id": "BIN-ICU-001",
+    "timestamp": "2025-10-23T08:00:00Z",
+    "fill_level": 35.0,
+    "temperature": 21.5,
+    "weight_kg": 6.2,
+    "location": "ICU-Floor3"
+  },
+  {
+    "bin_id": "BIN-ICU-002",
+    "timestamp": "2025-10-23T08:00:00Z",
+    "fill_level": 62.0,
+    "temperature": 22.0,
+    "weight_kg": 10.8,
+    "location": "ICU-Floor3"
+  },
+  {
+    "bin_id": "BIN-ER-001",
+    "timestamp": "2025-10-23T08:00:00Z",
+    "fill_level": 85.0,
+    "temperature": 23.5,
+    "weight_kg": 15.3,
+    "location": "Emergency-Room"
+  },
+  {
+    "bin_id": "BIN-SURGERY-001",
+    "timestamp": "2025-10-23T08:00:00Z",
+    "fill_level": 42.0,
+    "temperature": 20.0,
+    "weight_kg": 7.5,
+    "location": "Operating-Room-A"
+  },
+  {
+    "bin_id": "BIN-WARD-001",
+    "timestamp": "2025-10-23T08:00:00Z",
+    "fill_level": 97.0,
+    "temperature": 22.8,
+    "weight_kg": 18.2,
+    "location": "General-Ward-Floor2"
+  },
+  {
+    "bin_id": "BIN-WARD-002",
+    "timestamp": "2025-10-23T08:00:00Z",
+    "fill_level": 28.0,
+    "temperature": 21.0,
+    "weight_kg": 4.9,
+    "location": "General-Ward-Floor2"
+  }
+]
